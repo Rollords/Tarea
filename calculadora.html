@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/css/main.css">
+    <title>Calculadora</title>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen">
+    <header class="flex justify-center p-8 bg-violet-400">
+      <h1 class="text-6xl text-white font-medium">Calculadora Obras Ing.Civil</h1>
+    </header>
+
+    <section class=" border-violet-300 border-dashed border-2 m-5 md:text-2xl" >
+        <h2 class="text-center text-3xl
+        pt-2 font-semibold bg-violet-400 text-white">Cálculo para Paredes</h2>
+        <form action="#" class="md:mt-10">
+            <div class="flex flex-col gap-5  p-5
+                        font-semibold
+                        md:flex-row
+                        md:justify-evenly
+                        md:text-2xl
+                        ">
+                <div class=" grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="altoPared">Ingrese el alto de la pared:</label>
+                    <div>
+                    <input class="w-25
+                    border
+                    [appearance:textfield] 
+                    [&::-webkit-outer-spin-button]:appearance-none 
+                    [&::-webkit-inner-spin-button]:appearance-none
+                    border-violet-300 rounded-md p-2 
+                    focus:outline-none focus:ring-2 focus:ring-violet-500" type="number" name="" id="altoPared" placeholder="0" min="0" required>
+                    <span>m</span>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="largoPared">Ingrese el largo de la pared:</label>
+                    <div>
+                    <input class=" 
+                    w-25
+                    border
+                    [appearance:textfield] 
+                    [&::-webkit-outer-spin-button]:appearance-none 
+                    [&::-webkit-inner-spin-button]:appearance-none
+                    border-violet-300 rounded-md p-2 
+                    focus:outline-none focus:ring-2 focus:ring-violet-500"
+                    type="number" name="" id="largoPared" placeholder="0" min="0" required>
+                    <span>m</span>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="btn-calcular" class="block mx-auto bg-violet-400 font-semibold text-lg text-white rounded-2xl
+            p-3 mt-2 cursor-pointer shadow-lg hover:bg-violet-600 md:text-2xl md:mt-15">Calcular Materiales</button>
+
+            <h2 class="font-semibold mt-10 text-lg block mx-auto text-center underline md:text-2xl md:mt-20">Lista de Productos</h2>
+            <div class="flex flex-col gap-5 mt-5 ml-5 font-semibold md:flex-row md:justify-evenly md:mt-15">
+                <p>Se necesitan <span id="bloques">0</span> bloques.</p>
+                <p>Se requieren <span id="cemento">0</span> sacos de cemento.</p>
+                <p>Se necesitan <span id="arena">0</span> m³ de arena.</p>
+            </div>
+        </form>
+
+        <h2 class="text-center text-3xl
+        pt-2  mt-10 font-semibold bg-violet-400 text-white">Cálculo para Pisos</h2>
+        <form action="#" class="md:mt-10">
+            <div class="flex flex-col gap-5  p-5
+                        font-semibold
+                        md:grid
+                        md:grid-cols-2
+                        md:gap-15
+                        md:text-2xl">
+                <div class="grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="anchoHab">Ingrese el ancho de la Habitacion:</label>
+                    <div>
+                        <input class="w-25
+                        border
+                        [appearance:textfield] 
+                        [&::-webkit-outer-spin-button]:appearance-none 
+                        [&::-webkit-inner-spin-button]:appearance-none
+                        border-violet-300 rounded-md p-2 
+                        focus:outline-none focus:ring-2 focus:ring-violet-500" type="number" name="" id="anchoHab" placeholder="0" min="0" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="largoHab">Ingrese el largo de la Habitacion:</label>
+                    <div>
+                        <input class="w-25
+                        border
+                        [appearance:textfield] 
+                        [&::-webkit-outer-spin-button]:appearance-none 
+                        [&::-webkit-inner-spin-button]:appearance-none
+                        border-violet-300 rounded-md p-2 
+                        focus:outline-none focus:ring-2 focus:ring-violet-500" type="number" name="" id="largoHab" placeholder="0" min="0" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="anchoCeramica">Ingrese el ancho de la Ceramica:</label>
+                    <div>
+                        <input class="w-25
+                        border
+                        [appearance:textfield] 
+                        [&::-webkit-outer-spin-button]:appearance-none 
+                        [&::-webkit-inner-spin-button]:appearance-none
+                        border-violet-300 rounded-md p-2 
+                        focus:outline-none focus:ring-2 focus:ring-violet-500" type="number" name="" id="anchoCeramica" placeholder="0" min="0" required>
+                        <span>cm</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_auto] items-center gap-4 text-lg md:text-2xl">
+                    <label for="largoCeramica">Ingrese el largo de la Ceramica:</label>
+                    <div>
+                        <input class="w-25
+                        border
+                        [appearance:textfield] 
+                        [&::-webkit-outer-spin-button]:appearance-none 
+                        [&::-webkit-inner-spin-button]:appearance-none
+                        border-violet-300 rounded-md p-2 
+                        focus:outline-none focus:ring-2 focus:ring-violet-500" type="number" name="" id="largoCeramica" placeholder="0" min="0" required>
+                        <span>cm</span>
+                    </div>
+                </div>
+                
+            </div>
+            <button type="submit" id="btn-ceramicas" class="block mx-auto bg-violet-400 font-semibold text-lg text-white rounded-2xl
+            p-3 mt-2 cursor-pointer shadow-lg hover:bg-violet-600 md:text-2xl md:mt-15">Calcular Ceramicas</button>
+
+            <div class="flex flex-col gap-5 mt-10 mb-10 ml-5 font-semibold md:flex-row md:justify-evenly md:mt-15 md:mb-15">
+                <p>Se necesitan <span id="ceramicas">0</span> ceramicas. Recomendamos llevar  <span id="ceramicasTotal">0</span> ceramicas en total para cubrir la merma de roturas, rodapies y recortes.</p>
+            </div>
+        </form>
+    </section>
+    <a href="index.html" class=" bg-violet-400 text-white
+    inline-block w-fit m-auto text-center py-5 px-2 rounded-full hover:bg-violet-600" >Volver</a>
+
+    <footer"><p class="flex justify-center p-3 bg-violet-400 text-white text-lg mt-5 bottom-0">Pagina creada por Jose Melendez para el curso Endigital.</p></footer>
+
+
+    
+    <script type="module" src="/src/main.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
