@@ -55,3 +55,4 @@ ceramicasTotal.innerHTML=`${Math.ceil(areaTotal+((areaTotal*10)/100))}`;
 });
 
 // FIIIIIIIIIIIIIIIIIINN EJERCICIOOOOOOOO UNOOOOOOOOOOOOOOOOOOOOO
+
