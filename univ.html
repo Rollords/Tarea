@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/css/main.css">
+    <title>Calculadora</title>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+    <header class="flex justify-center p-8 bg-violet-400">
+      <h1 class="text-6xl text-white font-medium">Validador Universitario</h1>
+    </header>
+
+    <section class=" border-violet-300 border-dashed border-2 m-5 font-semibold text-xl md:text-2xl">
+        <h2 class="text-center text-3xl
+        pt-2 font-semibold bg-violet-400 text-white pb-2 mb-5">Universidad Bicentenaria de Aragua</h2>
+        <form action="#" class="flex flex-col p-5 justify-center gap-7" >
+            <label for="name">Nombre Estudiante:
+                <input class="outline-none border-violet-300 border-dashed border p-0.5" type="text" placeholder="Ingrese su nombre" id="name" required>
+            </label>
+            <label for="lastName">Apellido Estudiante:
+                <input class="outline-none border-violet-300 border-dashed border p-0.5" type="text" placeholder="Ingrese su Apellido" id="lastName" required>
+            </label>
+            
+            <label for="carrer">Carrera Estudiante:
+                <select id="carrer">
+                    <option value="">Ing.Sistemas</option>
+                    <option value="">Ing.Civil</option>
+                    <option value="">Ing.Quimica</option>
+                    <option value="">Ing.Electrica</option>
+                </select>
+            </label>
+            <span class="text-center text-2xl md:text-3xl">Materias</span>
+            <div class="grid grid-cols-2 gap-y-7 md:grid-cols-4">
+                <label for="math">Matematica</label>
+                <span>
+                    <input class="boton" type="number" min="0" max="20" id="math" required>
+                    pts
+                </span>
+                <label for="calc">Calculo</label>
+                <span>
+                    <input class="boton" type="number" min="0" max="20" id="calc" required>
+                    pts
+                </span>
+                <label for="metodologia">Metodologia de la Investigacion</label>
+                <span>
+                    <input class="boton" type="number" min="0" max="20" id="metodologia" required>
+                    pts
+                </span>
+                <label for="geometria">Geometria</label>
+                <span>
+                    <input class="boton" type="number" min="0" max="20" id="geometria" required>
+                    pts
+                </span>
+                <label for="logica">Logica</label>
+                <span>
+                    <input class="boton" type="number" min="0" max="20" id="logica" required>
+                    pts
+                </span>
+            </div>
+
+            <button type="submit" class="block mx-auto bg-violet-400 font-semibold text-lg text-white rounded-2xl
+            p-3 mt-3 mb-5 cursor-pointer shadow-lg hover:bg-violet-600 md:text-2xl md:mt-15 md:mb-10" id="btn-univ">Realizar Calculo</button>
+
+        </form>
+        <span id="aprobado"></span>
+        <span id="desaprobado"></span>
+    </section>
+
+    
+    <a href="index.html" class=" bg-violet-400 text-white
+    inline-block w-fit m-auto text-center py-5 px-2 rounded-full hover:bg-violet-600" >Volver</a>
+
+    <footer"><p class="flex justify-center p-3 bg-violet-400 text-white text-lg mt-5 bottom-0">Pagina creada por Jose Melendez para el curso Endigital.</p></footer>
+
+
+    
+    <script type="module" src="/src/main.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -11,7 +11,8 @@ const arena = document.getElementById("arena");
 
 //Escuchar cuando se haga click en el btn y dar resultado.
 
-calcularMateriales.addEventListener('click', () => {
+calcularMateriales.addEventListener('click', (e) => {
+e.preventDefault(); //evita que la pagina recargue por el btn type submit
 //Convierte el valor a numero.
 const alto = altoPared.valueAsNumber; 
 const largo = largoPared.valueAsNumber;
@@ -34,7 +35,8 @@ const ceramicasTotal = document.getElementById("ceramicasTotal");
 
 //Escuchar cuando se haga click en el btn y dar resultado.
 
-calcularCeramicas.addEventListener('click', () => {
+calcularCeramicas.addEventListener('click', (e) => {
+e.preventDefault(); //evita que la pagina recargue por el btn type submit
 //Convierte el valor a numero.
 const ancho = anchoHab.valueAsNumber; 
 const largo = largoHab.valueAsNumber;
