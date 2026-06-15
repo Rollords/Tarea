@@ -40,3 +40,17 @@
             m-auto 
             md:w-96
 }
+
+.btn-gato {
+    @apply bg-violet-400
+            cursor-pointer 
+            text-white 
+            rounded-md
+            shadow-md 
+            p-2
+            transition-shadow
+            hover:bg-violet-500
+            hover:shadow-violet-700
+            outline-black
+            outline-1
+}
